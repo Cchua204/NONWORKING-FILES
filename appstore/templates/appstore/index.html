@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+My Store
+{% endblock %} 
+
+{% block css_files %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static "store/index.css" %}">
+  <link rel="stylesheet" href="{% static "store/product.css" %}" />
+  <link rel="stylesheet" href="{% static "store/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+{% comment %} <header id="main-navigation">
+  <h1><a href="">My Store</a></h1>
+  <nav>
+    <a href="">All Products</a>
+  </nav>
+</header> {% endcomment %}
+
+<section id="welcome">
+  <header>
+    <img src="{% static "store/images/shop_img.jpg" %}" alt="Shop" />
+    <h2>Group 2 Store</h2>
+  </header>
+  <p>Welcome to our Office Supplies Store. Feel free to look around.</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Products</h2>
+
+  <ul>
+    {% for product in products %}
+      {% include "templates/appstore/includes/products.html" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I Do</h2>
+  <p>
+    Integer sodales convallis interdum. Pellentesque mollis justo sed vestibulum venenatis.
+  </p>
+  <p>
+    Integer sodales convallis interdum. Pellentesque mollis justo sed vestibulum venenatis.
+  </p>
+</section>
+{% endblock %}

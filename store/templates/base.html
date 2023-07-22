@@ -1,0 +1,192 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% block css_files %}{% endblock %}
+  <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+  <style>
+  body {
+      font-family: 'Style Arial';font-size: 22px;
+      background-color: #e7e2e2;
+
+
+  }
+  #script{
+      font-family: 'Style Script';font-size: 24px;
+      background-color: #f8f4f4;
+  }
+
+  #feature_text{background-color: #dbc6c6;
+
+
+  }
+  #space{    height: 500px;
+
+      }
+  #space2{    height: 300px;
+
+}
+
+
+      table{
+          border-collapse: separate;
+border: 15px solid #cd9fbd;
+
+border-radius: 100px;
+border-top:0px;
+border-bottom:0px;
+
+column-width: 500px;
+
+
+}
+th{    
+
+border: 0px solid #cd9fbd;
+border-bottom:0px;
+border-radius: 100px;
+
+
+column-width: 500px;
+  }
+td{
+      border-collapse: separate;
+border: 15px solid #cd9fbd;
+border-bottom:0px;
+
+border-radius: 50px;
+
+
+column-width: 500px;
+  }
+
+
+</style>
+  
+
+
+  <body>
+  
+
+
+      <div class="col">
+          <div class="card col-md">
+              <div class="text-center text-black  mb-3">
+                    <div class="card-header">
+                        <h1 class="card-title" striped>Welcome to Papers and Pens:</h1>
+                        <h3 class="description", id="script">"where you find all the supplies that you need in your life"</3>
+                    </div>
+      
+              </div>
+          </div>
+      </div>
+      </div>
+
+      <div class="row">
+          <div class="card col-md">
+      
+              <div class="card-body">
+                  <table class="table", style="width:100%">
+                      <tr>
+                          <th style="text-align: center;">Mission</th>
+                              
+                          <th style="text-align: center;">Vision</th>
+                          
+                      </tr>
+                      <tr>
+                          <td class="description" style="text-align: center;">To be able to provide affordable school supplies of all kinds for students.</td>
+                          <td class="description" style="text-align: center;">Live in a world where students don't have to worry about affording the best school supplies.</td>
+                      </tr>
+      
+                  </table>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+          <div class="col-md">
+              <div class="text-center text-black  mb-3", id="space2">
+                    <div class="card-header">
+
+                    </div>
+      
+              </div>
+          </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="card col-md">
+    
+            <div class="card-body">
+                <table class="table", style="width:100%">
+                    <tr>
+                        <th style="text-align: center;">Matthew Tan</th>
+                            
+                        <th style="text-align: center;">Charles Chua</th>
+                        <th style="text-align: center;">Zachary Go</th>
+                    </tr>
+                    <tr>
+                        <td class="description" style="text-align: center;">Lead Website Designer, son of Antonio</td>
+                        <td class="description" style="text-align: center;">Login and Authentication Coder, Cousin of Antonio</td>
+                        <td class="description" style="text-align: center;">Quotation Form and Checkout Head, Angry Grandfather of Antonio</td>
+                    </tr>
+                    <tr>
+                      <div style="position:absolute; height:75px;">
+                      <img src="{% static "appstore/images/mattpic.jpg" %}" style="position:relative; top:-350%; left:100%; width:200px; height:200px; border:10px #cd9fbd;" alt="MattPic" />
+                        </div>
+                        <div style="position:absolute; height:75px;">
+                      <img src="{% static "appstore/images/charlespic.jpg" %}" style="position:relative; top:-350%; left:370%; width:200px; height:200px; border:10px #cd9fbd;" alt="CharlesPic"/>
+                    </div>
+                    <div style="position:absolute; height:75px;">
+                      <img src="{% static "appstore/images/zachpic.jpg" %}" style="position:relative; top:-350%; left:635%; width:200px; height:200px; border:10px #cd9fbd;" alt="CharlesPic"/>
+                    </div>
+                    </tr>
+                  
+  
+                      
+
+                      
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+          
+
+
+    
+
+
+
+
+<div class="row">
+  <div class="card row-md">
+      <div class="text-center text-black  mb-3", id="feature_text">
+            <div class="card-header">
+                <h4 class="card-title" striped>About the Owner:</h4>
+                <h5 class="description">Antonio is a passion-driven man who aims to make a living for his family whilst making a difference in their community.</h5>
+                
+            </div>
+
+      </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+  
+</body>
+</html>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

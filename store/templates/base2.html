@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Style Arial';font-size: 22px;
+        background-color: #e7e2e2;
+
+
+    }
+
+    #catalog{background-color: #dbc6c6;
+
+
+    }
+    #body{    height: 1000px;
+
+        }
+
+
+    table {
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
+td {
+  height: 200px;
+}
+    table, th, td {
+        padding-right: 60px;
+padding-left: 60px;
+
+  border-collapse: collapse;
+  border-radius: 100px;
+  border: solid 1px rgb(0, 0, 0); 
+  
+}
+th, td {
+  background-color: #dfa7cc;
+}
+.wrapper{
+    margin:0 auto;
+    width:1000px;
+}
+.imgcharles{
+    width: 50px;
+    height:50px;
+    background-image: url(appstore/static/store/images/charlespic.jpg);
+    background-size: 100%;
+}
+
+</style>
+    </style>
+    </head>
+    <body>
+    
+
+
+<div class="col">
+    <div class="col-md">
+        <div class="text-center text-black  mb-3" id="orders-pending">
+              <div class="card-header">
+                  <h1 class="card-title" striped>Welcome to Papers and Pens:</h1>
+                  <h4 class="description">"where you find all the supplies that you need in your life"</h4>
+              </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="card col-md">
+
+        <div class="card-body">
+            <table class="table", style="width:100%">
+            
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>                            
+                            <div style="position:absolute; height:100px;">
+                            <img src="{% static "appstore/images/pen.jpg" %}" alt="Pen" style="position:relative; top:0%; left:10%; width:150px; height:150px; border:10px #0f0c0e;"/>
+                            </div>
+                        </td>
+                        <td>Black Ball-Point Pen</td>
+                        <td>Php 8</td>
+                    </tr>
+
+                    <tr>
+                        <td>                            
+                            <div style="position:absolute; height:100px;">
+                            <img src="{% static "appstore/images/eraser.jpg" %}" alt="Pen" style="position:relative; top:0%; left:10%; width:150px; height:150px; border:10px #0f0c0e;"/>
+                            </div>
+                        </td>
+                        <td>Eraser</td>
+                        <td>Php 15</td>
+                    </tr>
+
+                    <tr>
+                        <td>                            
+                            <div style="position:absolute; height:100px;">
+                            <img src="{% static "appstore/images/notebook.jpg" %}" alt="Pen" style="position:relative; top:0%; left:10%; width:150px; height:150px; border:10px #0f0c0e;"/>
+                            </div>
+                        </td>
+                        <td>Wooden Notebook</td>
+                        <td>Php 20</td>
+                    </tr>
+    
+                    <tr>
+                        <td>                            
+                            <div style="position:absolute; height:100px;">
+                            <img src="{% static "appstore/images/stapler.jpg" %}" alt="Pen" style="position:relative; top:0%; left:10%; width:150px; height:150px; border:10px #0f0c0e;"/>
+                            </div>
+                        </td>
+                        <td>Blue Stapler</td>
+                        <td>Php 8</td>
+                    </tr>
+
+                    <tr>
+                        <td>                            
+                            <div style="position:absolute; height:100px;">
+                            <img src="{% static "appstore/images/calculator.jpg" %}" alt="Pen" style="position:relative; top:0%; left:10%; width:150px; height:150px; border:10px #0f0c0e;"/>
+                            </div>
+                        </td>
+                        <td>Calculator</td>
+                        <td>Php 500</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
