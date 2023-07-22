@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h4>Customer ID</h4>
+<p>{{ customer.customer_id }}</p>
+<table>
+    <td>
+        <table>
+            <tr>
+                <th>Items Bought</th>
+
+            </tr>
+                {% for x in customer.item_bought %}
+            <tr>
+                <td>{{ x }}</td>
+                {% endfor %}
+        </table>
+    </td>
+    <td>
+        <table>
+            <tr>
+            <th>Order Count</th>
+            </tr>
+            {% for y in customer.order_count %}
+                <td>{{ y }}</td>
+            </tr>
+                {% endfor %}
+        </table>
+        </td>
+    </td>
+</table>
+<a class="btn btn-primary" href="/home/">home</a>
+</body>
+</html>
