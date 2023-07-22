@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Members1</h1>
+  
+<h1>
+{% if my_customers %}
+TRUE
+{% if else %}
+FALSE
+{% endif %}
+</h1>
+
+<ul>
+{% for x in mycustomers %}
+<li>{{ x.first_name }} {{ x.last_name }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

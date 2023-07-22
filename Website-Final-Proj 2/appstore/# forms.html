@@ -1,0 +1,6 @@
+# forms.py
+from django import forms
+
+class AddToCartForm(forms.Form):
+    item = forms.CharField(max_length=255, required=True)
+    action = forms.ChoiceField(choices=[('add', 'Add'), ('remove', 'Remove')], required=True)

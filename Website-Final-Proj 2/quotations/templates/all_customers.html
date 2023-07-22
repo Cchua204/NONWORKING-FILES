@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Members12</h1>
+  
+{% if mycustomers %}
+  <ul>
+    {% for x in mycustomers %}
+      <li>{{ x.first_name }} {{ x.last_name }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No customers found.</p>
+{% endif %}
+
+</body>
+</html>
