@@ -1,0 +1,1 @@
+folders of attempts at creating a working login/signup system and quotations system, which we weren't able to figure out fully
